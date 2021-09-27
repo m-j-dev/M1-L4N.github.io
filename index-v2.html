@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
+        <title>Stock Check go!</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+        <!-- font awesome -->
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link
+        href="https://fonts.googleapis.com/css?family=Pacifico"
+        rel="stylesheet"/>
+        
+        <link
+        href="https://fonts.googleapis.com/css?family=Lobster"
+        rel="stylesheet"/>
+
+        <link rel="stylesheet" href="./style-v2.css">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h1>
+                    Stock Check Go!
+                  </h1>
+                </div>
+                <div class="panel-body">
+                  <p>Please enter the stock you want to track using its Symbol:</p>
+                  </form>
+                  <form action="" id="message-form-stock">
+                    <div class="form-group">
+                      <label>Stock symbol:</label>
+                      <textarea
+                        id="message-stock"
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter the stock symbol you want to track"
+                      ></textarea>
+                    </div>
+                    <button class="btn">Submit</button>
+                  </form>
+                  <div class="panel-body">
+                    <div class="panel-heading-chart">
+                      <h1>
+                        Stock Chart
+                      </h1>
+                    </div>
+                    <!-- <ul class="message-board"></ul> -->
+                    <canvas class="myChart" id="myChart" width="400" height="400"></canvas>
+                  </div>
+                  <i id = "destroy" class= "fa fa-trash pull-left delete"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h1>
+                    Your Profile
+                  </h1>
+                </div>
+                <div class="panel-body">
+                  <p>Enter your name and your favorite stock you want to track</p>
+                  <form action="" id="message-form-profile">
+                    <div class="form-group">
+                      <label>Profile Info:</label>
+                      <textarea
+                      id="message-profile"
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter info here"
+                      ></textarea>
+                    </div>
+                    <button class="btn">Submit</button>
+                  </form>
+                  <ul class="message-board"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+
+        <!-- Firebase CDN -->
+        <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+        
+        <!--  JS Import -->
+        <script src="./app-v2.js"></script>
+
+        <!-- Other CHECK and DELETE -->
+        <!-- <h1> Stock Check GO!</h1> -->
+        <!-- <canvas class="myChart" id="myChart" width="400" height="400"></canvas> -->
+        
+        <!-- <script src="/chartplot.js"></script> -->
+        
+    </body>
+</html>
+
+

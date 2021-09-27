@@ -1,0 +1,42 @@
+body {
+    background-color: #A8D4ED;
+    background: url('./images/stock-market.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.panel-primary {
+    border: 0;
+}
+
+.panel-primary .panel-heading {
+    color: #008080;
+    background-color: #ADD8E6;
+    border: 0;
+    font-family: 'Lobster', cursive;
+}
+
+.panel-default {
+    border: 0;
+}
+
+.panel-default .panel-heading {
+    color: #008080;
+    background-color: #ADD8E6;
+    border: 0;
+    font-family: 'Lobster', cursive;
+}
+
+textarea.form-control {
+    background-color: #f1edee;
+}
+
+.btn {
+  border-color: #17202A;
+}
+
+.panel-heading-chart {
+    color: #008080;
+    border: 0;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
